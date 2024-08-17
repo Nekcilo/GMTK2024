@@ -1,0 +1,11 @@
+res://audio_player.tscn
+res://Scripts/audio_player.gd
+res://Game.tscn
+res://Scripts/Game.gd
+res://MainMenu.tscn
+res://Scripts/MainMenu.gd
+res://OptionsMenu.tscn
+res://Scripts/OptionsMenu.gd
+res://CreditsMenu.tscn
+res://Scripts/CreditsMenu.gd
+res://volume_slider.tscn

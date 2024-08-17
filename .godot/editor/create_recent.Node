@@ -1,0 +1,10 @@
+Panel
+TextureRect
+ColorRect
+AudioStreamPlayer2D
+Label
+HSlider
+Button
+VBoxContainer
+HBoxContainer
+MarginContainer

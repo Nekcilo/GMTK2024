@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ftiqxxpkqumm"]
+
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kh7ru"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_kh7ru")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -8.0
+offset_top = -15.0
+offset_right = 1933.0
+offset_bottom = 1092.0
