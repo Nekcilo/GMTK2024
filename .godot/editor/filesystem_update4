@@ -29,3 +29,5 @@ res://Dialogic/InteractionEvents/Interaction_6.dtl
 res://Dialogic/InteractionEvents/Interaction_7.dtl
 res://Dialogic/InteractionEvents/Intraction_8.dtl
 res://Scripts/MainMenu.gd
+res://DiaGame.tscn
+res://Scripts/Global.gd
