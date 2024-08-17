@@ -6,6 +6,7 @@ var draggable = false
 var offset: Vector2
 var initialPos: Vector2
 var array_of_bodies = [] #added
+var occupied: bool
 
 func _process(delta):
 	if draggable:
@@ -40,7 +41,8 @@ func _on_area_2d_mouse_exited():
 		scale = Vector2(1, 1)
 
 func _on_area_2d_body_entered(body: StaticBody2D):
-	if body.is_in_group('droppable'):
+	if body.is_in_group('droppable') && occupied == false:
+		occupied = true
 		#removed is_inside_droppable = true
 		array_of_bodies.append(body) #ADDED
 		body.modulate = Color(Color.html("000000"), 1)
@@ -48,6 +50,7 @@ func _on_area_2d_body_entered(body: StaticBody2D):
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group('droppable'):
+		occupied = false
 		#REMOVED is_inside_dropable = false
 		array_of_bodies.erase(body) #ADDED
 		body.modulate = Color(Color.html("000000"), 0.7)

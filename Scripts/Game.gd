@@ -1,6 +1,8 @@
 extends Node2D
 
 func _ready():
+	print("Castle game, Start!")
+	print(Global.total_scores)
 	AudioPlayer.stop()
 	AudioPlayer.play_music_level()
 

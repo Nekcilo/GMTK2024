@@ -1,10 +1,10 @@
 extends Node2D
 
 var Count
-var total_scores = []
 
 func _ready():
 	Count = 1
+	print("Dialogue game, Start!")
 	Dialogic.start("Interaction_1")
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 
@@ -12,9 +12,9 @@ func _on_dialogic_signal(argument:String):
 	if argument == "timeline_end":
 		Count = Count + 1
 		print(Count)
-		total_scores.append(Dialogic.VAR.Score)
-		print(total_scores)
-		#append Dialogic.VAR.Score to an array with the index 0-7, corresponding to the score of each interaction
+		#appends Dialogic.VAR.Score to an array with the index 0-7, corresponding to the score of each interaction
+		Global.total_scores.append(Dialogic.VAR.Score)
+		print(Global.total_scores)
 		change_scene()
 
 func change_scene():

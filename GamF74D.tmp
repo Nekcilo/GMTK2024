@@ -27,6 +27,9 @@ position = Vector2(791, 547)
 [node name="Platform2" parent="." instance=ExtResource("2_740aj")]
 position = Vector2(1118, 545)
 
+[node name="Platform3" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(955, 545)
+
 [node name="Platform4" parent="." instance=ExtResource("2_740aj")]
 position = Vector2(1035, 894)
 
