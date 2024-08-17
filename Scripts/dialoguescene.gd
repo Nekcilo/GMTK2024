@@ -11,6 +11,7 @@ func _on_dialogic_signal(argument:String):
 	if argument == "timeline_end":
 		Count = Count + 1
 		print(Count)
+		print(Dialogic.VAR.Score)
 		change_scene()
 
 func change_scene():
