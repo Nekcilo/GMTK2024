@@ -1,14 +1,14 @@
+HBoxContainer
+Button
+ColorRect
 CollisionShape2D
 Area2D
 Sprite2D
-ColorRect
 StaticBody2D
 MarginContainer
 Label
-HBoxContainer
 Panel
 TextureRect
 AudioStreamPlayer2D
 HSlider
-Button
 VBoxContainer

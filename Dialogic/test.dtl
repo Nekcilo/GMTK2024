@@ -1,0 +1,15 @@
+Princet: Hello There
+- General Kenobi
+- Hi :)
+Dragon: Slay
+label GO back
+The narrator stood menacingly \:o
+[text_input var="response"]
+if {response} == "no":
+	[wait time="0.5" hide_text="false"]
+	dude wtf
+	jump GO back
+if {response} != "no":
+	aight
+[signal arg="timeline_end"]
+[end_timeline]

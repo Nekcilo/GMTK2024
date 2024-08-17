@@ -9,3 +9,14 @@ res://Scripts/Platform.gd
 res://Platform.gd
 res://Scripts/object.gd
 res://object.tscn
+res://Dialogic/timeline.dtl
+res://Scripts/Game.gd
+res://Dialogic/Princet.dch
+res://Dialogic/Dragon.dch
+res://Dialogic/DialogicStyle.tres
+res://Dialogic/Custom_Style.tres
+res://Dialogic/VisualNovelTextbox/custom_vn_textbox_layer.tscn
+res://Dialogic/CenteredChoices/custom_vn_choice_layer.tscn
+res://dialogue.tscn
+res://Scripts/dialoguescene.gd
+res://Dialogic/Interaction_2.dtl

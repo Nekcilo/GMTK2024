@@ -27,8 +27,39 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"Dragon": "res://Dialogic/Dragon.dch",
+"Princet": "res://Dialogic/Princet.dch"
+}
+directories/dtl_directory={
+"Interaction_2": "res://Dialogic/Interaction_2.dtl",
+"test": "res://Dialogic/test.dtl"
+}
+glossary/default_case_sensitive=true
+layout/style_list=["res://Dialogic/Custom_Style.tres"]
+layout/default_style="res://Dialogic/Custom_Style.tres"
+extensions_folder="res://addons/dialogic_additions"
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
+variables={
+"response": ""
+}
 
 [display]
 

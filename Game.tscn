@@ -22,64 +22,32 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Platform" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(761, 668)
+position = Vector2(791, 547)
 
 [node name="Platform2" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1088, 666)
+position = Vector2(1118, 545)
 
 [node name="Platform3" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(925, 666)
+position = Vector2(955, 545)
 
 [node name="Platform4" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(923, 997)
+position = Vector2(1035, 894)
 
-[node name="Object" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(922, 997)
+[node name="Platform5" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(869, 894)
 
-[node name="CastlePiece" type="ColorRect" parent="." groups=["Castle Pieces"]]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -315.0
-offset_top = 460.0
-offset_right = -56.0
-offset_bottom = 666.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-color = Color(1, 0, 1, 1)
+[node name="Object 1" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(868, 893)
 
-[node name="CastlePiece2" type="ColorRect" parent="." groups=["Castle Pieces"]]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -223.0
-offset_top = 190.0
-offset_right = -97.0
-offset_bottom = 422.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-color = Color(1, 0.41467, 0.137393, 1)
+[node name="Object 2" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(1034, 893)
 
-[node name="CastlePiece3" type="ColorRect" parent="." groups=["Castle Pieces"]]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -192.0
-offset_top = 710.0
-offset_right = -85.0
-offset_bottom = 930.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-color = Color(0.275372, 0.682427, 0.789795, 1)
+[node name="Next" type="Button" parent="."]
+offset_left = 1690.0
+offset_top = 960.0
+offset_right = 1872.0
+offset_bottom = 1037.0
+theme_override_font_sizes/font_size = 50
+text = "Next ->"
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
