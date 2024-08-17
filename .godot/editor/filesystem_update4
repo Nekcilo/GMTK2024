@@ -20,3 +20,12 @@ res://Dialogic/CenteredChoices/custom_vn_choice_layer.tscn
 res://dialogue.tscn
 res://Scripts/dialoguescene.gd
 res://Dialogic/Interaction_2.dtl
+res://Dialogic/InteractionEvents/Interaction_1.dtl
+res://Dialogic/InteractionEvents/Interaction_2.dtl
+res://Dialogic/InteractionEvents/Interaction_3.dtl
+res://Dialogic/InteractionEvents/Interaction_4.dtl
+res://Dialogic/InteractionEvents/Interaction_5.dtl
+res://Dialogic/InteractionEvents/Interaction_6.dtl
+res://Dialogic/InteractionEvents/Interaction_7.dtl
+res://Dialogic/InteractionEvents/Intraction_8.dtl
+res://Scripts/MainMenu.gd

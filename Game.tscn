@@ -41,13 +41,3 @@ position = Vector2(868, 893)
 
 [node name="Object 2" parent="." instance=ExtResource("3_hym0q")]
 position = Vector2(1034, 893)
-
-[node name="Next" type="Button" parent="."]
-offset_left = 1690.0
-offset_top = 960.0
-offset_right = 1872.0
-offset_bottom = 1037.0
-theme_override_font_sizes/font_size = 50
-text = "Next ->"
-
-[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
