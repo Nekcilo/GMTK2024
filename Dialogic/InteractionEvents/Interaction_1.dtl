@@ -4,12 +4,12 @@ Interaction 1 \:)
 	The Princet places a small parcel in the mouth of the cave
 	The Dragon raises its head in acknowledgement
 	The Princet bows and happily walks away from the dragon's cave
-	set {Score} = "10"
+	set {Score} = 10
 - Walk Away
 	The Princet bows and slowly walks away from the dragon's cave
-	set {Score} = "5"
+	set {Score} = 5
 - Taunt
 	Princet: I’m glad my father killed your mother
 	The Dragon [shake rate=50 level=9 connected=1] roars [/shake] as the Princet runs away
-	set {Score} = "1"
+	set {Score} = 1
 [signal arg="timeline_end"]

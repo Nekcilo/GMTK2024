@@ -1,2 +1,8 @@
 Interaction 4 \:)
+- Excellent
+	set {Score} = 10
+- Good
+	set {Score} = 5
+- Bad
+	set {Score} = 1
 [signal arg="timeline_end"]

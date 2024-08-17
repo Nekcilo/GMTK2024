@@ -31,3 +31,5 @@ res://Dialogic/InteractionEvents/Intraction_8.dtl
 res://Scripts/MainMenu.gd
 res://DiaGame.tscn
 res://Scripts/Global.gd
+res://Scripts/DiaGame.gd
+res://Dialogic/InteractionEvents/Interaction_8.dtl
