@@ -1,24 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723878816
-audio_player.tscn::PackedScene::428819377403511835::1723875838::0::1::::<><>::res://Scripts/audio_player.gd
+::res://::1723884150
+audio_player.tscn::PackedScene::428819377403511835::1723881739::0::1::::<><>::res://Scripts/audio_player.gd
 CreditsMenu.tscn::PackedScene::1165213632625020843::1723875700::0::1::::<><>::res://Scripts/CreditsMenu.gd
-drag_drop_bg.tscn::PackedScene::3212687941273226037::1723878770::0::1::::<><>::
-Fragments of Eden OST.mp3::AudioStreamMP3::81263140716917484::1721561850::1723875528::1::::<><>::
-Game.tscn::PackedScene::390682948425009716::1723876811::0::1::::<><>::res://Scripts/Game.gd
-icon.svg::CompressedTexture2D::9181012118676728552::1723837749::1723837758::1::::<><>::
-MainMenu.tscn::PackedScene::4653055610230806319::1723875700::0::1::::<><>::res://Scripts/MainMenu.gd
+Game.tscn::PackedScene::390682948425009716::1723884072::0::1::::<><>::res://Scripts/Game.gd<>uid://bdu614mybd7q2::::res://Platform.tscn
+MainMenu.tscn::PackedScene::4653055610230806319::1723884072::0::1::::<><>::res://Scripts/MainMenu.gd
+object.tscn::PackedScene::8842013109300585641::1723884137::0::1::::<><>::
 OptionsMenu.tscn::PackedScene::2759538006984397205::1723875700::0::1::::<><>::res://Scripts/OptionsMenu.gd<>uid://c86otpi8u40yy::::res://volume_slider.tscn
+Platform.tscn::PackedScene::2640204969912430563::1723884142::0::1::::<><>::res://Scripts/Platform.gd
 volume_slider.tscn::PackedScene::7153953687536000116::1723875701::0::1::::<><>::res://Scripts/volume_slider.gd
-Worlds Apart OST (Radio).mp3::AudioStreamMP3::565623399121112475::1721562019::1723874532::1::::<><>::
-::res://Assets/::1723878797
+::res://Assets/::1723884150
+icon.svg::CompressedTexture2D::9181012118676728552::1723837749::1723884150::1::::<><>::
 ::res://Assets/Art/::1723837809
 ::res://Assets/Audio/::1723837816
-::res://Scripts/::1723878797
-audio_player.gd::GDScript::-1::1723875838::0::1::::<>AudioStreamPlayer2D<>::
+::res://Scripts/::1723884142
+audio_player.gd::GDScript::-1::1723881729::0::1::::<>AudioStreamPlayer2D<>::
 CreditsMenu.gd::GDScript::-1::1723875488::0::1::::<>Control<>::
 Game.gd::GDScript::-1::1723876811::0::1::::<>Node2D<>::
+Global.gd::GDScript::-1::1723883926::0::1::::<>StaticBody2D<>::
 MainMenu.gd::GDScript::-1::1723875488::0::1::::<>Control<>::
 OptionsMenu.gd::GDScript::-1::1723875488::0::1::::<>Control<>::
+Platform.gd::GDScript::-1::1723884054::0::1::::<>StaticBody2D<>::
 volume_slider.gd::GDScript::-1::1723840007::0::1::::<>HSlider<>::
 ::res://Themes/::1723878797
 default_bus_layout.tres::AudioBusLayout::1746494478314643263::1723837847::0::1::::<><>::
