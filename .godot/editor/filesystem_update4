@@ -1,7 +1,11 @@
-res://Game.tscn
-res://Dialogic/Custom_Style.tres
-res://Scripts/object.gd
-res://MainMenu.tscn
-res://DiaGame.tscn
-res://Scripts/Platform.gd
 res://Platform.tscn
+res://Dialogic/Custom_Style.tres
+res://Scripts/Platform.gd
+res://MainMenu.tscn
+res://Game.tscn
+res://DiaGame.tscn
+res://Scripts/object.gd
+res://object.tscn
+res://audio_player.tscn
+res://Scripts/OptionsMenu.gd
+res://OptionsMenu.tscn
