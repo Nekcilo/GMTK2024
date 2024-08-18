@@ -3,10 +3,17 @@ extends Node2D
 var Count
 
 func _ready():
+	#Count = 0
+	#Video Start
 	Count = 1
 	print("Dialogue game, Start!")
-	#Dialogic.start("Interaction_1")
+	Dialogic.start("Interaction_1")
 	Dialogic.signal_event.connect(_on_dialogic_signal)
+
+#function for when the video playing ends
+	#if video == ended:
+		#Count = Count + 1
+		#change_scene()
 
 func _on_dialogic_signal(argument:String):
 	if argument == "timeline_end":
