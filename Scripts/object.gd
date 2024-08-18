@@ -37,12 +37,21 @@ func _on_area_2d_mouse_exited():
 
 func _on_area_2d_body_entered(body: StaticBody2D):
 	if body.is_in_group('droppable') && occupied == false:
-		occupied = true
 		array_of_bodies.append(body) #ADDED
 		body.modulate = Color(Color.html("000000"), 1)
+		occupied = true
+		
+	#elif occupied == true:
+		#self.position = initialPos
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group('droppable'):
 		occupied = false
 		array_of_bodies.erase(body) #ADDED
 		body.modulate = Color(Color.html("000000"), 0.7)
+
+#func _on_area_2d_body_overlap():
+	#if occupied == false:
+		#print("Can be placed")
+	#elif occupied == true:
+		#print("Can't be placed")

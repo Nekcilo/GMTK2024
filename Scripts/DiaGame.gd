@@ -5,7 +5,7 @@ var Count
 func _ready():
 	Count = 1
 	print("Dialogue game, Start!")
-	Dialogic.start("Interaction_1")
+	#Dialogic.start("Interaction_1")
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 
 func _on_dialogic_signal(argument:String):
@@ -19,28 +19,42 @@ func _on_dialogic_signal(argument:String):
 
 func change_scene():
 	match Count:
+		#0:
+			#Opening Cutscene
+			#print("Opening Cutscene")
 		1:
+			#Moon Phase 1
+			print("Moon Phase 1")
 			Dialogic.start("Interaction_1")
 		2: 
-			#cutscene here
+			#Moon Phase 2
+			print("Moon Phase 2")
 			Dialogic.start("Interaction_2")
 		3: 
-			#cutscene here
+			#Moon Phase 3
+			print("Moon Phase 3")
 			Dialogic.start("Interaction_3")
 		4: 
-			#cutscene here
+			#Moon Phase 4
+			print("Moon Phase 4")
 			Dialogic.start("Interaction_4")
 		5: 
-			#cutscene here
+			#Moon Phase 5
+			print("Moon Phase 5")
 			Dialogic.start("Interaction_5")
 		6: 
-			#cutscene here
+			#Moon Phase 6
+			print("Moon Phase 6")
 			Dialogic.start("Interaction_6")
 		7: 
-			#cutscene here
+			#Moon Phase 7
+			print("Moon Phase 7")
 			Dialogic.start("Interaction_7")
 		8: 
-			#cutscene here
+			#Moon Phase 8
+			print("Moon Phase 8")
 			Dialogic.start("Interaction_8")
 		9: 
+			#Moon Cycle Complete!
+			print("Moon Cycle Complete!")
 			get_tree().change_scene_to_file("res://Game.tscn")

@@ -19,22 +19,6 @@ offset_right = 1935.0
 offset_bottom = 1100.0
 color = Color(0.571701, 0.368853, 0.557537, 1)
 
-[node name="Text" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -303.0
-offset_top = -11.5
-offset_right = 303.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-text = "HERE IS A WHOLE BUNCH OF TEXT THAT DEFINITELY WILL HAVE CREDITS LATER"
-
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -57,6 +41,25 @@ size_flags_vertical = 4
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+
+[node name="Text" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = ". ₊ ⊹ .  ⟡  . ⊹ ₊ . ME  ݁₊ ⊹ .  ⟡ . ⊹ ₊ .
+
+Attributions:
+Godot Plugins - Dialogic
+UI -
+Music -
+SFX -
+
+Moral support from:
+⊹˚₊ Joe + Grace ₊˚⊹
+"
+horizontal_alignment = 1
+
+[node name="Seperator" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
 
 [node name="Back" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2

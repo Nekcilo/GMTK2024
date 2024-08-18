@@ -9,3 +9,9 @@ res://object.tscn
 res://audio_player.tscn
 res://Scripts/OptionsMenu.gd
 res://OptionsMenu.tscn
+res://Scripts/Game.gd
+res://Scripts/MainMenu.gd
+res://Scripts/DiaGame.gd
+res://Dialogic/Dragon.dch
+res://Dialogic/InteractionEvents/Interaction_8.dtl
+res://CreditsMenu.tscn
