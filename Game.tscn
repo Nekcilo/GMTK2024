@@ -21,20 +21,74 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Platform" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(791, 547)
+[node name="CastlePlatform" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(448, 544)
 
-[node name="Platform2" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1118, 545)
+[node name="CastlePlatform2" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(590, 544)
 
-[node name="Platform4" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1035, 894)
+[node name="CastlePlatform3" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(732, 544)
 
-[node name="Platform5" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(869, 894)
+[node name="CastlePlatform4" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(874, 544)
+
+[node name="CastlePlatform5" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1016, 544)
+
+[node name="CastlePlatform6" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1158, 544)
+
+[node name="CastlePlatform7" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1300, 544)
+
+[node name="CastlePlatform8" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1440, 544)
+
+[node name="PiecePlatform1" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(448, 944)
+
+[node name="PiecePlatform2" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(590, 944)
+
+[node name="PiecePlatform3" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(732, 944)
+
+[node name="PiecePlatform4" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(874, 944)
+
+[node name="PiecePlatform5" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1016, 944)
+
+[node name="PiecePlatform6" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1158, 944)
+
+[node name="PiecePlatform7" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1300, 944)
+
+[node name="PiecePlatform8" parent="." instance=ExtResource("2_740aj")]
+position = Vector2(1440, 944)
 
 [node name="Object 1" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(868, 893)
+position = Vector2(448, 944)
 
 [node name="Object 2" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(1034, 893)
+position = Vector2(590, 944)
+
+[node name="Object 3" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(732, 944)
+
+[node name="Object 4" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(874, 944)
+
+[node name="Object 5" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(1016, 944)
+
+[node name="Object 6" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(1158, 944)
+
+[node name="Object 7" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(1300, 944)
+
+[node name="Object 8" parent="." instance=ExtResource("3_hym0q")]
+position = Vector2(1440, 946)

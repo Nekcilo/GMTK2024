@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfk0gndl5ctbx"]
+[gd_scene load_steps=5 format=3 uid="uid://bfk0gndl5ctbx"]
 
 [ext_resource type="Script" path="res://Scripts/OptionsMenu.gd" id="1_qssna"]
 [ext_resource type="PackedScene" uid="uid://c86otpi8u40yy" path="res://volume_slider.tscn" id="2_ogwhf"]
+[ext_resource type="Theme" uid="uid://in8jtemf3gl2" path="res://Themes/SliderTheme.tres" id="3_pmayc"]
+[ext_resource type="Theme" uid="uid://bx434h4q67lga" path="res://Themes/MenuButton.tres" id="3_qkkq3"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -18,7 +20,7 @@ offset_left = -21.0
 offset_top = -16.0
 offset_right = 1935.0
 offset_bottom = 1100.0
-color = Color(0.571701, 0.368853, 0.557537, 1)
+color = Color(1, 0.615892, 0.751807, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -51,6 +53,7 @@ vertical_alignment = 1
 
 [node name="Master Slider" parent="MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("2_ogwhf")]
 layout_mode = 2
+theme = ExtResource("3_pmayc")
 max_value = 1.0
 step = 0.001
 value = 1.0
@@ -64,6 +67,7 @@ vertical_alignment = 1
 
 [node name="Music Slider" parent="MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("2_ogwhf")]
 layout_mode = 2
+theme = ExtResource("3_pmayc")
 max_value = 1.0
 step = 0.001
 value = 1.0
@@ -77,6 +81,7 @@ vertical_alignment = 1
 
 [node name="SFX Slider" parent="MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("2_ogwhf")]
 layout_mode = 2
+theme = ExtResource("3_pmayc")
 max_value = 1.0
 step = 0.001
 value = 1.0
@@ -127,9 +132,10 @@ vertical_alignment = 1
 
 [node name="Back" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("3_qkkq3")
 text = "Back"
 
 [connection signal="item_selected" from="MarginContainer/HBoxContainer/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]
 [connection signal="toggled" from="MarginContainer/HBoxContainer/VBoxContainer/CheckBox" to="." method="_on_check_box_toggled"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

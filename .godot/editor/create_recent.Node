@@ -1,9 +1,9 @@
+ColorRect
 Label
 CheckBox
 OptionButton
 HBoxContainer
 Button
-ColorRect
 CollisionShape2D
 Area2D
 Sprite2D

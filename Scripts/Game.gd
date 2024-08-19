@@ -8,8 +8,6 @@ var Bad = 1
 
 var Step = 0
 var Score: int
-var X = 1
-var Key = "null"
 
 var CastlePieces = {
 	"Body": 0,
@@ -29,10 +27,11 @@ func _ready():
 	print(scores)
 	AudioPlayer.stop()
 	AudioPlayer.play_music_level()
-	
+
 	for i in scores:
 		Step = Step + 1
 		Score = i
+		
 		match Step:
 			1:
 				Score = Score
@@ -147,19 +146,18 @@ func _ready():
 					CastlePieces[randPiece()] = Bad
 					print(CastlePieces)
 
+func randPiece():
+	var X = 1
+	var Key = "null"
+	
+	while X != 0:
+		Key = CastlePieces.keys().pick_random()
+		X = CastlePieces[Key]
+		print("Slay")
+	return Key
+
 func _input(event):
 	if event.is_action_pressed("Escape"):
 		get_tree().quit()
 		print("Quit Game")
 
-func testfunc():
-	while CastlePieces != 0:
-		CastlePieces = CastlePieces[CastlePieces.keys().pick_random()]
-		CastlePieces = Excellent
-		print("Testing CastlePieces:", CastlePieces)
-
-func randPiece():
-	while X != 0:
-		Key = CastlePieces.keys().pick_random()
-		X = CastlePieces[Key]
-	return Key
