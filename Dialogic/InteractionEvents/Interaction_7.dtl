@@ -1,8 +1,18 @@
-Interaction 7 \:)
-- Excellent
+The Princet decides to venture further with the Dragon to show them the vast field near the cave, in hopes of strengthening their bond even further.
+The dragon follows, excited and intrigued but reserved for not knowing what to expect.
+- Playfully run through the field
+	Princet: Let’s run! Feel the wind, it’s exhilarating!
+	The Princet dashes through the field, excited at the chance to escape their royal duties and experience real nature. Left far behind, the dragon runs after the Princet, easily catching up. The two run together, the dragon’s joy evident in the way it moves.
+	Exhausted by the large burst of energy both of them exhibited, they lie down, basking in the warmth of each other. Their once distant relationship has grown deeply.
 	set {Score} = 10
-- Good
+- Walk through the field together
+	Princet: This field is beautiful, isn’t it? Let’s take a stroll.
+	The Princet and the dragon walk side by side, the dragon occasionally glancing around, taking in the new surroundings.
+	The moment is peaceful, and their mutual bond grows stronger.
 	set {Score} = 5
-- Bad
+- Order the dragon to stay close
+	Princet:  I’m happy to bring you out, but stay close to me. I don’t want you getting lost or scaring anyone.
+	The dragon’s eyes narrow, but it follows the Princet closely, its movements tense and cautious, unsure of what to expect from their surroundings.
+	The walk is silent, the atmosphere heavy with unspoken tension.
 	set {Score} = 1
 [signal arg="timeline_end"]

@@ -1,8 +1,21 @@
-Interaction 6 \:)
-- Excellent
-	set {Score} = 10
-- Good
+The Princet arrives at the cave with a sketchbook, eager to capture the Dragon’s likeness.
+As the townspeople have noticed the Princets frequent visits to the Dragon’s Cave, harassment has all but ceased, meaning the Dragon can live more comfortably.
+As the Princet approaches, they see the Dragon lying outside the cave entrance, basking in the sun.
+- Start drawing without asking
+	Princet: I thought I would draw you today, so I’ve brought my sketchbook. I’m glad I did, you look quite impressive.
+	The Princet starts sketching without waiting for a response.
+	The dragon watches but seems indifferent, used to the Princets forward nature. It leans back to relax in the warm sunlight.
 	set {Score} = 5
-- Bad
+- Ask permission to draw the dragon
+	Princet: Good afternoon Noble Dragon, I have brought my sketchbook today!
+	The Princet anxiously shuffles their feet, their face turned away from the dragon to hide the intense blush that has spread across their face.
+	Princet: I may not be the best artist, but would you indulge me with the opportunity to draw you? I’d love to capture how majestic you look in the sunlight
+	The dragon tilts its head in curiosity, confused by the Princet’s apprehensiveness, which it has not noticed previously.
+	The Princet, recognising that the Dragon is not opposed, smiles and begins to sketch, objecting when the dragon moves to see what has been drawn on the page.
+	set {Score} = 10
+- Show disinterest
+	Princet: I brought my sketchbook with me today… but now I don’t feel like drawing
+	The dragon growls, hurt by the Princet’s lack of interest.
+	The Princet flinches but sits in the sun with the Dragon, trying to prove they do still care.
 	set {Score} = 1
 [signal arg="timeline_end"]

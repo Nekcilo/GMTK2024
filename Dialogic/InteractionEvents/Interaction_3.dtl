@@ -1,8 +1,19 @@
-Interaction 3 \:)
-- Excellent
-	set {Score} = 10
-- Good
+Having escaped their own home to visit The Dragon, The Princet returns to the cave, hoping for a lack of angry mob.
+As they approach, it’s clear to see that The Dragon's cave is in disarray, with broken stones and debris scattered around from the events of the day before.
+The dragon slowly emerges slightly from the shadows, risking it all to reveal a bit more of its form to the Princet.
+- Apologise
+	Princet: ....I apologise for not intervening. I’m so sorry for what they’ve done. I didn’t expect residents of the kingdom to hold this much grievance.
+	The Princet lowers their head in shame, attempting to show their sincerity.
+	The dragon remains silent but edges a bit closer to the light, acknowledging the apology.
 	set {Score} = 5
-- Bad
+- Offer to help
+	Princet: This is... terrible. Let me help you clean this up. It's the least I can do.
+	The Princet keeps their distance from the dragon, respecting the hesitance to let someone into their home. They gather the scattered debris and stones, carefully placing them outside the cave.
+	The dragon watches intently, a hint of gratitude in its eyes as it moves slightly closer to the cave entrance.
+	set {Score} = 10
+- Blame
+	Princet: If you had just defended yourself, this wouldn’t have happened.
+	The dragon’s eyes flash with anger, a deep growl rumbling from its chest.
+	The Princet steps back, feeling the intensity of the dragon's gaze before retreating hastily.
 	set {Score} = 1
 [signal arg="timeline_end"]

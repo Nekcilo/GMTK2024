@@ -1,8 +1,17 @@
-Interaction 5 \:)
-- Excellent
-	set {Score} = 10
-- Good
-	set {Score} = 5
-- Bad
+On the next visit, the Princet brings a large book filled with stories from their kingdom. The dragon, accustomed to the visits, allows the Princet to sit beside them in the cave.
+- Demand the dragon listens
+	Princet: Sit quietly and listen to this story. If you’re to be recognised as an official citizen, you must thoroughly understand my kingdom’s history, and hesitance towards your kind.
+	The Dragon’s eyes narrow, but it reluctantly listens as the Princet reads with an air of harsh authority.
+	The atmosphere grows tense, the Princet’s tone hardening as they speak.
 	set {Score} = 1
+- Offer to teach the dragon to read
+	Princet: If you’ll allow me, I would love to teach you how to read these books by yourself. Eventually, you may even be able to communicate with me.
+	The dragon looks hesitant but there’s intense sparkle of interest in their eye. Their tail curls around to pull the Princet closer, initiating the lesson.
+	The Princet spends the afternoon teaching the dragon, their bond growing stronger with each word.
+	set {Score} = 10
+- Read the stories aloud
+	Princet: I’ve brought some books to read to you. They contain some of my favourite childhood stories.
+	The Princet reads the fairytales aloud, the dragon listening intently, occasionally huffing in what could be interpreted as contentment.
+	The afternoon passes slowly and peacefully, the dragon’s tension gradually easing with each passing minute.
+	set {Score} = 5
 [signal arg="timeline_end"]

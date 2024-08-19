@@ -1,8 +1,30 @@
-Interaction 2 \:)
-- Excellent
-	set {Score} = 10
-- Good
-	set {Score} = 5
-- Bad
+Outside the cave, a crowd of angry local townspeople has gathered. The air is filled with tension as shouts and cries fill the space, echoing off the cave walls.
+The Princet approaches cautiously, eyes widening as they witness the scene unfolding before them. Stones and debris are hurled at the cave's entrance, where the dragon, startled and fearful, attempts to retreat further into the darkness.
+The Princet steps closer, their heart pounding at the sight of the townspeople’s cruelty.
+- Walk Away
+	The Princet feels a sharp pang of guilt but doubt and fear hold them back from interfering, torn between duty and self-preservation.
+	Princet: It's not my place to interfere... Maybe they’re justified
+	The Princet, paralysed by indecision, stands there as the dragon releases cries of pain and fear.
+	Unable to bear the sound any longer, the Princet turns and walks away. The guilt lingers long after they’ve left, a bitter reminder of their failure to act.
 	set {Score} = 1
+- Do Nothing
+	The Princet hesitates, watching from a distance as the townspeople continue their assault. Their heart aches at the idea of the dragon cowering alone in the cave.
+	The dragon emits a low, distressed growl and shrinks further back into the shadows.
+	Princet: This isn’t right, but... I need to earn their respect as the heir, I can’t intervene. Maybe they’ll tire themselves out soon.
+	The Princet decides to wait it out, hiding in the shadows to watch until the townspeople leave.
+	[wait time="0.5"]
+	Once the last townspeople leave, the Princet cautiously approaches the cave.
+	Princet: You have my sincere apologies, it is my duty to protect all inhabitants of the kingdom, I should have done something.
+	The Princet quietly turns and walks away, the weight of their inaction heavy on their shoulders.
+	set {Score} = 5
+- Intervene
+	With a surge of determination, the Princet strides up to the townspeople.
+	Princet: Loyal Citizens! Cease this at once! How dare you harass this harmless creature who seeks only to find peace in its own home?
+	The crowd falters, startled by the Princet’s intervention. Some townspeople lower their hands, the stones they held dropping to the ground as they turn to face their future monarch.
+	Princet: You shame our kingdom with this behaviour! Return to your homes immediately!
+	The townspeople exchange uneasy glances and slowly begin to disperse, a mix of fear and respect in the air.
+	As the remaining townspeople clear the area, the Princet takes a few gentle steps towards the cave’s opening.
+	Princet: You’re safe now, I promise to make sure they won’t bother you again.
+	From within the cave, the dragon’s eyes lock onto the Princet’s. There’s a brief moment of silent acknowledgement of the Princet’s efforts.
+	set {Score} = 10
 [signal arg="timeline_end"]

@@ -1,8 +1,21 @@
-Interaction 4 \:)
-- Excellent
+Since the previous riot that ensued outside the Dragon’s cave, The Princet visits regularly, keeping watch for any townspeople wanting to cause problems, in an attempt to earn the dragon’s trust.
+During one visit, the Princet notices the dragon eyeing the entrance to the cave with longing, as if yearning for the outside world.
+- Invite the dragon to explore outside
+	Princet: Would you like to explore the world beyond this cave? I can show you the fields, the rivers...
+	The dragon's eyes brighten with surprise and excitement. With hesitation they step forward, its form now fully visible to the Princet.
+	A rush of elation fills the Princet’s heart as they see the Dragon for the first time, turning away to disguise the red glow filling their face.
+	Princet: O-Okay then, let’s go
+	Still facing away, the Princet stretches their hand back to guide the clueless Dragon into the open air.
 	set {Score} = 10
-- Good
+- Bring the outside world to the dragon
+	Princet: I see you’re curious about the outside. I’ll bring you something from the fields tomorrow—a flower, or maybe some fresh fruit?
+	The dragon nods, hiding their subtle excitement and stepping back into the cave.
+	Princet: Then consider it done, wait for me and I’ll be back soon!
+	The Princet leaves with a sense of determination, vowing to return with something special.
 	set {Score} = 5
-- Bad
+- Do Nothing
+	Princet: It’s not safe for you out there. You should stay here, where no one can hurt you.
+	The dragon narrows its eyes, emitting a low growl and advancing towards the Princet.
+	The Princet, sensing they’ve overstepped, quickly retreats and leaves the cave, planning to bring something from the outside as an apology.
 	set {Score} = 1
 [signal arg="timeline_end"]

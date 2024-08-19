@@ -1,5 +1,7 @@
 extends StaticBody2D
 
+var occupied: bool = false
+
 func _ready():
 	modulate = Color(Color.html("000000"), 0.3)
 
