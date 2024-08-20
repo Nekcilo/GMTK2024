@@ -1,94 +1,44 @@
-[gd_scene load_steps=4 format=3 uid="uid://ftiqxxpkqumm"]
+[gd_scene load_steps=3 format=3 uid="uid://ftiqxxpkqumm"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_kh7ru"]
-[ext_resource type="PackedScene" uid="uid://bdu614mybd7q2" path="res://Platform.tscn" id="2_740aj"]
-[ext_resource type="PackedScene" uid="uid://dx8ewtw3r85ij" path="res://object.tscn" id="3_hym0q"]
+[ext_resource type="Theme" uid="uid://d8kwp7itsor3" path="res://Themes/LabelTheme.tres" id="2_usof3"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_kh7ru")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="MarginContainer2" type="MarginContainer" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -10.0
-offset_top = -16.0
-offset_right = 1931.0
-offset_bottom = 1091.0
+offset_left = -11.0
+offset_top = -14.0
+offset_right = 1935.0
+offset_bottom = 1099.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer2"]
+layout_mode = 2
 mouse_filter = 2
+color = Color(0.593134, 0.593134, 0.593134, 1)
 
-[node name="CastlePlatform" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(448, 544)
-
-[node name="CastlePlatform2" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(590, 544)
-
-[node name="CastlePlatform3" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(732, 544)
-
-[node name="CastlePlatform4" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(874, 544)
-
-[node name="CastlePlatform5" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1016, 544)
-
-[node name="CastlePlatform6" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1158, 544)
-
-[node name="CastlePlatform7" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1300, 544)
-
-[node name="CastlePlatform8" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1440, 544)
-
-[node name="PiecePlatform1" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(448, 944)
-
-[node name="PiecePlatform2" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(590, 944)
-
-[node name="PiecePlatform3" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(732, 944)
-
-[node name="PiecePlatform4" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(874, 944)
-
-[node name="PiecePlatform5" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1016, 944)
-
-[node name="PiecePlatform6" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1158, 944)
-
-[node name="PiecePlatform7" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1300, 944)
-
-[node name="PiecePlatform8" parent="." instance=ExtResource("2_740aj")]
-position = Vector2(1440, 944)
-
-[node name="Object 1" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(448, 944)
-
-[node name="Object 2" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(590, 944)
-
-[node name="Object 3" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(732, 944)
-
-[node name="Object 4" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(874, 944)
-
-[node name="Object 5" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(1016, 944)
-
-[node name="Object 6" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(1158, 944)
-
-[node name="Object 7" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(1300, 944)
-
-[node name="Object 8" parent="." instance=ExtResource("3_hym0q")]
-position = Vector2(1440, 946)
+[node name="Label" type="Label" parent="MarginContainer2/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.5
+offset_top = -26.0
+offset_right = 159.5
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_usof3")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Oops it's loading LOL"
+horizontal_alignment = 1
+vertical_alignment = 1

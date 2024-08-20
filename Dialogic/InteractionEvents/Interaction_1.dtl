@@ -1,4 +1,6 @@
+join Princet rightmost [animation="Slide In Right"]
 The Princet hesitantly approaches the dragon’s cave, the weight of the past heavy on their shoulders. The cave looms before them, guarding the creature lurking within.
+set {Score} = 1
 Princet: Honorable Dragon, I’d like to apologise for my father's previous actions. I know what he did was unforgivable.
 The cave remains silent, the dragon unseen, hidden deep within the shadows. Only the faintest breath can be heard, a reminder that the creature within is still alive.
 Princet: I realise that because of him, the townspeople have been harassing you. And for that, I am deeply sorry. You shouldn’t have to suffer because of his choices
@@ -11,17 +13,20 @@ The dragon lays still, its massive form barely visible in the darkness. The Prin
 	The Princet bows, returning their respects to the dragon, hiding a hopeful smile.
 	Princet: Thank you for listening. I’ll leave you in peace now.
 	The Princet turns and walks away, feeling a small glimmer of hope, their heart lighter than when they arrived.
+	leave Princet [animation="Slide Out Left"]
 	set {Score} = 10
 - Walk Away
 	Princet: I understand you’re not ready to speak, and that’s okay. I won’t force you into anything.
 	The Princet lowers their head in a bow, showing their compassion and respect. The cave remains silent, but there’s a sense that the Princet’s words have been heard by the creature within.
 	With a final glance at the dark entrance, the Princet slowly walks away.
+	leave Princet [animation="Slide Out Left" length="1.0"]
 	set {Score} = 5
 - Taunt
-	Princet: You won’t even acknowledge me? How dare you! Do you know who I am?
+	Princet (Princet_Mad): You won’t even acknowledge me? How dare you! Do you know who I am?
 	The Princet steps closer, their voice echoing off the cave walls, filled with bitterness and anger.
 	Princet: Now I understand why my father killed your mother! You’re a pathetic excuse for a beast!
 	A deafening [shake rate=50 level=9 connected=1] roars [/shake] erupts from the cave, the ground trembling beneath the Princet’s feet. The dragon’s eyes flare in the darkness, burning with an intense, fiery rage.
 	The Princet, feeling a pang of guilt for their cruel outburst, turns and flees, their heart pounding in their chest.
-	set {Score} = 1
+	leave Princet [animation="Slide Out Left" length="0.2"]
+[wait time="1.0"]
 [signal arg="timeline_end"]

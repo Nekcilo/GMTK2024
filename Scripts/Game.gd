@@ -159,16 +159,20 @@ func _ready():
 					CastlePieces[randPiece()] = Excellent
 					print(CastlePieces)
 					TotalScore = TotalScore + Excellent
+					Global.finalScore = TotalScore
 				elif Score == Good:
 					print("Good")
 					CastlePieces[randPiece()] = Good
 					print(CastlePieces)
 					TotalScore = TotalScore + Good
+					Global.finalScore = TotalScore
 				elif Score == Bad:
 					print("Bad")
 					CastlePieces[randPiece()] = Bad
 					print(CastlePieces)
 					TotalScore = TotalScore + Bad
+					Global.finalScore = TotalScore
+		
 
 func randPiece():
 	var X = 1
@@ -180,18 +184,16 @@ func randPiece():
 		print("Slay")
 	return Key
 
-func _input(event):
-	if event.is_action_pressed("Escape"):
-		get_tree().quit()
-		print("Quit Game")
-	
-	if event.is_action_pressed("Test"):
-		if TotalScore == 80:
-			print("Best Ending!")
-			get_tree().change_scene_to_file("res://excellent_ending.tscn")
-		elif TotalScore >= 50:
-			print("Good Ending")
-			get_tree().change_scene_to_file("res://good_ending.tscn")
-		elif TotalScore <= 49:
-			print("Bad Ending")
-			get_tree().change_scene_to_file("res://bad_ending.tscn")
+func _process(delta):
+	if TotalScore == 80:
+		print("Best Ending!")
+		get_tree().change_scene_to_file("res://excellent_ending.tscn")
+		print("CHANGING TO BEST SCENE")
+	elif TotalScore >= 50:
+		print("Good Ending")
+		get_tree().change_scene_to_file("res://good_ending.tscn")
+		print("CHANGING TO GOOD SCENE")
+	elif TotalScore <= 49:
+		print("Bad Ending")
+		get_tree().change_scene_to_file("res://bad_ending.tscn")
+		print("CHANGING TO BAD SCENE")

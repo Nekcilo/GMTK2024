@@ -8,12 +8,40 @@
 "sound_moods": {},
 "style": "Custom_Style"
 },
-"default_portrait": "",
+"default_portrait": "Princet_Idle",
 "description": "",
 "display_name": "Princet",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"Princet_Blush": {
+"export_overrides": {
+"image": "\"res://Assets/Art/Princet/Princet_Blush.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Princet_Idle": {
+"export_overrides": {
+"image": "\"res://Assets/Art/Princet/Princet_Idle.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Princet_Mad": {
+"export_overrides": {
+"image": "\"res://Assets/Art/Princet/Princet_Mad.PNG\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

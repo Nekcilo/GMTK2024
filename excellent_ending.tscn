@@ -1,6 +1,11 @@
-[gd_scene format=3 uid="uid://c6r8num5xv0us"]
+[gd_scene load_steps=4 format=3 uid="uid://c6r8num5xv0us"]
+
+[ext_resource type="Script" path="res://excellent_ending.gd" id="1_luld3"]
+[ext_resource type="Texture2D" uid="uid://d8ccpi8ksxgc" path="res://Assets/Art/Castle.PNG" id="2_n51cb"]
+[ext_resource type="Theme" uid="uid://d8kwp7itsor3" path="res://Themes/LabelTheme.tres" id="3_a6kbh"]
 
 [node name="ExcellentEnding" type="Node2D"]
+script = ExtResource("1_luld3")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 8
@@ -18,32 +23,64 @@ metadata/_edit_use_anchors_ = true
 [node name="BG" type="ColorRect" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="VSplitContainer" type="VSplitContainer" parent="MarginContainer/BG"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -194.5
-offset_top = -89.0
-offset_right = 194.5
-offset_bottom = 89.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Castle" type="Sprite2D" parent="MarginContainer/BG"]
+position = Vector2(957, 546)
+scale = Vector2(1.03981, 1.03981)
+texture = ExtResource("2_n51cb")
 
-[node name="Label2" type="Label" parent="MarginContainer/BG/VSplitContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/BG"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+offset_left = 478.0
+offset_top = 64.0
+offset_right = 1442.0
+offset_bottom = 326.0
+
+[node name="EndingText" type="Label" parent="MarginContainer/BG/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_a6kbh")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 text = "BEST ENDING"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="MarginContainer/BG/VSplitContainer"]
+[node name="lol" type="Label" parent="MarginContainer/BG/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_a6kbh")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Sorry gang I ran out of time (congrats!! the best ending!! well done)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Seperator" type="Label" parent="MarginContainer/BG/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-text = "Sorry gang I ran out of time (congrats!! the best ending!! well done)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/BG/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Score" type="Label" parent="MarginContainer/BG/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_a6kbh")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+text = "SCORE:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreNumber" type="Label" parent="MarginContainer/BG/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_a6kbh")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+text = "X/80"
 horizontal_alignment = 1
 vertical_alignment = 1

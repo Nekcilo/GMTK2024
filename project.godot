@@ -40,6 +40,7 @@ directories/dtl_directory={
 "Interaction_6": "res://Dialogic/InteractionEvents/Interaction_6.dtl",
 "Interaction_7": "res://Dialogic/InteractionEvents/Interaction_7.dtl",
 "Interaction_8": "res://Dialogic/InteractionEvents/Interaction_8.dtl",
+"Opening": "res://Opening.dtl",
 "test": "res://Dialogic/test.dtl"
 }
 glossary/default_case_sensitive=true

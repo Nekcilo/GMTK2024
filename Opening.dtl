@@ -1,0 +1,9 @@
+Once upon a time, there was a king and a family of dragons. The king hated the dragons, as he felt his authority was being threatened by the fact he had to share his land with them. So what does an emasculated little wimp like this king do?
+He orders the whole dragon family to be [color=RED]slain.[/color]
+When the dragons saw the king's army riding up to their cave with torches and swords pointed directly at them, out of desperation they hid their egg in a secret crevice of their cave dwelling to protect it. However, as the hoard lay waste to the dragon enclave, the egg hatched, just in time to witness the slaughter.
+Growing up, the hatchling had no way of learning how to fend for themself outside of their natural instincts, which led to them being a regular victim of the townspeople's animosity and spite.
+The king never knew of the last dragon. Only now, as he lies on his deathbed, has news started to reach the palace. The Princet, preoccupied with handling royal affairs in preparation for the loss of their father, had no time to consider what their father had done to the dragons until they heard what had become of them.
+The Princet’s curiosity grew at each mention of the Dragon, especially as the townspeople took great delight in emphasising how much they despised the Dragon. This interest grew so strong that the Princet snuck out of the castle, disguised in common clothes, to visit the cave....
+set {Score} = 10
+[wait time="1.0"]
+[signal arg="timeline_end"]

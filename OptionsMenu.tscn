@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfk0gndl5ctbx"]
+[gd_scene load_steps=7 format=3 uid="uid://bfk0gndl5ctbx"]
 
 [ext_resource type="Script" path="res://Scripts/OptionsMenu.gd" id="1_qssna"]
+[ext_resource type="Theme" uid="uid://d8kwp7itsor3" path="res://Themes/LabelTheme.tres" id="2_ixr00"]
 [ext_resource type="PackedScene" uid="uid://c86otpi8u40yy" path="res://volume_slider.tscn" id="2_ogwhf"]
 [ext_resource type="Theme" uid="uid://in8jtemf3gl2" path="res://Themes/SliderTheme.tres" id="3_pmayc"]
 [ext_resource type="Theme" uid="uid://bx434h4q67lga" path="res://Themes/MenuButton.tres" id="3_qkkq3"]
+[ext_resource type="FontFile" uid="uid://bu38kh8oy2k6w" path="res://Assets/Dosis-SemiBold.ttf" id="5_0njua"]
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -47,6 +49,8 @@ size_flags_horizontal = 4
 
 [node name="Master Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_ixr00")
+theme_override_font_sizes/font_size = 30
 text = "Master Volume"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -61,6 +65,8 @@ bus_name = "Master"
 
 [node name="Music Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_ixr00")
+theme_override_font_sizes/font_size = 30
 text = "Music Volume"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -75,6 +81,8 @@ bus_name = "Music"
 
 [node name="SFX Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_ixr00")
+theme_override_font_sizes/font_size = 30
 text = "SFX Volume"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -94,6 +102,8 @@ vertical_alignment = 1
 
 [node name="Res Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("2_ixr00")
+theme_override_font_sizes/font_size = 30
 text = "Resolution
 "
 horizontal_alignment = 1
@@ -121,6 +131,8 @@ vertical_alignment = 1
 
 [node name="CheckBox" type="CheckBox" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_0njua")
+theme_override_font_sizes/font_size = 30
 button_pressed = true
 text = "Fullscreen"
 alignment = 1
@@ -130,12 +142,18 @@ layout_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Seperator4" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Back" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_qkkq3")
+theme_override_font_sizes/font_size = 30
 text = "Back"
 
 [connection signal="item_selected" from="MarginContainer/HBoxContainer/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]
 [connection signal="toggled" from="MarginContainer/HBoxContainer/VBoxContainer/CheckBox" to="." method="_on_check_box_toggled"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Back" to="." method="_on_quit_pressed"]

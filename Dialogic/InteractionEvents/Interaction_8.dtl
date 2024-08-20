@@ -1,19 +1,26 @@
+join Princet (Princet_Idle) right
+join Dragon (Dragon_Idle) left
 The Princet stands at the entrance of the dragon’s cave, feeling accomplished by the bond they have nurtured with the Dragon. They’ve spent many days thinking of how to protect the dragon from further harm, and the idea has finally taken shape in their mind.
 The dragon watches them closely, its gaze steady and curious, sensing that the Princet has something important to say.
 - Humbly offer
-	Princet: I’ve been thinking... You deserve a sanctuary, a place where you can live without fear. I want to build you a castle- a haven where we can live together, and no one would dare to harm you.
+	Princet (Princet_Blush): I’ve been thinking... You deserve a sanctuary, a place where you can live without fear. I want to build you a castle- a haven where we can live together, and no one would dare to harm you.
 	The dragon blinks, taken aback by the Princet’s proposal, then slowly nods, a deep rumble of approval resonating from its chest.
+	join Dragon (Dragon_Blush) center
 	The Princet’s heart swells with warmth, knowing that the dragon not only accepts the offer but understands the deep respect and admiration behind it. They run towards the dragon, excitedly taking its claws in their much smaller hands.
 	Princet: I can’t wait to get started!
 	set {Score} = 10
 - Insist
 	Princet: You need a castle if you’re ever going to be safe. I can’t always be here to protect you, and this cave certainly won’t do.
 	The dragon’s body tenses as a low, displeased growl rumbles through the cave. It recoils, clearly displeased by the Princet’s instruction.
+	join Dragon (Dragon_Mad) left
 	Realising that the Dragon has taken offence, The Princet turns away from the dragon, understanding now that their well-intentioned concern was misunderstood. Awkwardness hangs heavily in the air.
 	set {Score} = 1
 - Suggest
-	Princet: What if I designed a castle for you? A place that reflects your power and your needs. Then I can get the royal architects to build it for you.
+	Princet (Princet_Blush): What if I designed a castle for you? A place that reflects your power and your needs. Then I can get the royal architects to build it for you.
 	The dragon tilts its head and after a moment of consideration, gives a slow nod, its agreement more cautious than outright enthusiasm.
 	The Princet grins. This collaboration could bring them even closer, and the dragon’s acceptance, even if it is hesitant, feels like a step in the right direction.
 	set {Score} = 5
+leave Princet [animation="Slide Out Left"]
+leave Dragon [animation="Slide Out Right"]
+[wait time="1.0"]
 [signal arg="timeline_end"]

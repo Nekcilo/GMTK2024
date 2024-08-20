@@ -5,9 +5,9 @@ var Count
 func _ready():
 	#Count = 0
 	#Video Start
-	Count = 1
+	Count = 0
 	print("Dialogue game, Start!")
-	Dialogic.start("Interaction_1")
+	Dialogic.start("Opening")
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 
 #function for when the video playing ends
@@ -26,9 +26,9 @@ func _on_dialogic_signal(argument:String):
 
 func change_scene():
 	match Count:
-		#0:
-			#Opening Cutscene
-			#print("Opening Cutscene")
+		0:
+			print("Opening Scene")
+			Dialogic.start("Opening")
 		1:
 			#Moon Phase 1
 			print("Moon Phase 1")
