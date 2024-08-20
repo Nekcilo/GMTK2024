@@ -51,7 +51,7 @@ enum AnimationsNewText {NONE, WIGGLE}
 
 @export_subgroup("Color")
 @export var box_color_use_global: bool = true
-@export var box_color_custom: Color = Color.BLACK
+@export var box_color_custom: Color = Color.html("ff9dc0")
 
 @export_subgroup("Size & Position")
 @export var box_size: Vector2 = Vector2(550, 110)

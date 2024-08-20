@@ -30,3 +30,8 @@ res://Game.tscn
 res://Scripts/Autoload/Global.gd
 res://Themes/GameVNTheme.tres
 res://Dialogic/VisualNovelTextbox/custom_vn_textbox_layer.tscn
+res://Dialogic/VisualNovelTextbox/vn_textbox_default_panel.tres
+res://Dialogic/VisualNovelTextbox/vn_textbox_layer.gd
+res://audio_player.tscn
+res://Scripts/Autoload/audio_player.gd
+res://addons/dialogic/Modules/Audio/event_music.gd
